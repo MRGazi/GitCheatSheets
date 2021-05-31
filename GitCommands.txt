@@ -1,0 +1,23 @@
+create a new repository on the command line:
+
+echo "# GitCheatSheets" >> README.md
+
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/MRGazi/GitCheatSheets.git
+git push -u origin main
+
+
+push an existing repository from the command line
+git remote add origin https://github.com/MRGazi/GitCheatSheets.git
+git branch -M main
+git push -u origin main 
+git push origin master
+
+Refuse to Merge Unrelated Histories
+--allow-unrelated-histories
+
+Example:
+git pull origin branchname --allow-unrelated-histories
